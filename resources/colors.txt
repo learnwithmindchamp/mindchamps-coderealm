@@ -1,0 +1,8 @@
+Color Scheme:
+MindChamp blue: #00c8dc
+MindChamp orange: #ff9900
+Grey: #f2f2f2
+
+Header: MindChamp blue
+Footer: MindChamp orange
+BG: Grey
