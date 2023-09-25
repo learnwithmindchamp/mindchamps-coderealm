@@ -1,0 +1,272 @@
+<html>
+<head>
+<title>Mindchamp's CodeRealm</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+      background-color: #00c8dc;
+      font-size: 10px;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-weight: bold
+     text-shadow: 0px 0px 5px black;
+    }
+
+.c2{
+background-color:yellow;
+}
+.c1{
+text-decoration:none;
+color:black;
+}
+.c3{
+color:black;
+padding-left:25;
+padding-right:25; 	
+}
+.c4{
+padding-right:200; 	
+padding-left:25;
+}
+
+.c5{
+text:decoration:none;
+}
+#rcorners1 {
+  border-radius: 25px;
+  padding: 20px; 
+  width: 45;
+  height: 20;
+  display: block;
+margin-top:auto;
+  background-color:#FF8C00;
+}
+#rcorners1:hover{
+background-color:#00c8dc;
+color:white;
+}
+
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .search-input {
+            width: 300;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+			padding-right:30;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #00c8dc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orange;
+            color: white;
+        }
+		        .search-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            max-height: 200px; /* Set the maximum height here */
+            overflow-y: auto; /* Make the dropdown scrollable */
+        }
+
+        .search-option {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .search-option:hover {
+            background-color: #f2f2f2;
+        }
+		.c5{
+		padding-top:20;
+		padding-left:30;
+		}
+		.c6{
+		background-color:#00c8dc;
+		color:white;
+  border-radius: 25px;
+
+  padding: 20px; 
+  width: 125;
+  height: 20;
+  display: block;
+ 
+text-align:center;
+  padding-left:20;
+}
+		
+		.c7{
+		background-color:orange;
+		color:white;
+  border-radius: 25px;
+  padding: 20px; 
+  width: 125;
+  height: 30;
+  display: block;
+
+text-align:center;
+		}
+		.c8{
+		text-decoration:none;
+color:white;
+}
+
+		
+    </style>
+
+</head>
+<body>
+
+    <header>
+	<h1>MindChamp's CodeRealm</h1>
+	</header>
+
+   
+<nav>
+ 
+<table>
+<tr>
+<td rowspan=2 class="c4"><img src="Mindchamp.png" height='125' width='125' style="float:left;">	</td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/" class="c1">Home</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/courses"class="c1">Courses</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/projects"class="c1">Projects</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/educators"class="c1">Educators</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/code-a-bit-challenge"class="c1">Code-A-Bit-Challenge</a></td>
+<td rowspan=2 class="c3"><a href="tie.html"  id="rcorners1" style="color:white" class="c1">More</a></td>
+<td class="c6" ><a href="https://www.mindchamp.in/educators" class="c8">Teach With Us</a></td>
+</tr>
+<tr>
+<td class="c7"><a href="https://www.mindchamp.in/contact-us" class="c8">Book a Free Demo Session</a></td>
+</tr>
+</table>
+</nav>
+<br>
+<img src="png.png" height=450 width=100%>
+  <table align=center>
+<tr>
+<td colspan=2>
+ <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+		</td>
+       <td  class="c5"> <button onclick="searchSections()" class="search-button">Search</button> </td>
+	   <td class="c5"><div class="dropdown">
+            <button onclick="toggleDropdown()" class="search-button">Go to Section</button>
+            <div id="sectionDropdown" class="dropdown-content">
+                <a href="#color">color</a>
+    		    </div>
+				            </div>
+        </div>
+    </div>
+    </td>
+	</tr>
+	</table>
+
+    <main>
+			<section id="doctype">
+            <h2>&lt;!DOCTYPE&gt;</h2>
+            <p>Defines the document type and version of HTML. It is an essential declaration at the beginning of an HTML document. The declaration tells the web browser which version of HTML the document is using, allowing it to render the page correctly.</p>
+        </section><!-- Example -->
+
+      <section id="color">
+        <h2>color:</h2>
+        <p><b>Values:</b> Named colors (like red, blue), hexadecimal color codes, RGB values, etc.</p>
+      </section>
+     
+ <script>
+
+        function searchSections() {
+            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            const sections = document.querySelectorAll("section");
+
+            for (const section of sections) {
+                const sectionText = section.textContent.toLowerCase();
+                if (sectionText.includes(searchTerm)) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                    break;
+                }
+            }
+        }
+
+
+        function toggleDropdown() {
+            const dropdownContent = document.getElementById("sectionDropdown");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+    </script>
+	    <script>
+        function toggleDropdown() {
+            const dropdownContent = document.getElementById("sectionDropdown");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+    </script>
+	 </body>
+		</html>
+		
