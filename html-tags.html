@@ -2,6 +2,7 @@
 <head>
 <title>Mindchamp's CodeRealm</title>
     <style>
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -133,8 +134,8 @@ color:white;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            max-height: 200px; /* Set the maximum height here */
-            overflow-y: auto; /* Make the dropdown scrollable */
+            max-height: 200px; 
+            overflow-y: auto; 
         }
 
         .search-option {
@@ -179,7 +180,78 @@ text-align:center;
 color:white;
 }
 
-		
+
+        .c16 {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: calc(33.33% - 40px);
+            width: 1000;
+            text-align: center;
+        }
+
+        .c16 h2 {
+            color: #007acc;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .c16 p {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        footer {
+            background-color:#00c8dc ;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+		   .c16 section {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .c16 section:hover {
+        background-color: #e0e0e0;
+    }
+
+		.c16 section.expanded {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+    }
+
+    .c16 section.expanded h2 {
+        color: #007acc;
+    }
+
+
+    .c16 section h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .c16 section p {
+        display: none;
+    }
+
+    .c16 section.expanded p {
+        display: block;
+    }
+	
     </style>
 
 </head>
@@ -220,8 +292,8 @@ color:white;
 	   <td class="c5"><div class="dropdown">
             <button onclick="toggleDropdown()" class="search-button">Go to Section</button>
             <div id="sectionDropdown" class="dropdown-content">
-                <a href="#doctype">&lt;!doctype&gt;</a>
-			<a href="#html">&lt;html&gt;</a>
+            <a href="#doctype">&lt;!doctype&gt;</a>
+			<a href="#HTML">&lt;html&gt;</a>
             <a href="#head">&lt;head&gt;</a>
 			<a href="#h1">&lt;h1&gt;</a>
             <a href="#p">&lt;p&gt;</a>
@@ -254,16 +326,17 @@ color:white;
 				            </div>
         </div>
     </div>
+	
     </td>
 	</tr>
 	</table>
-
-    <main>
+<div align=center>
+    <main class="c16">
 			<section id="doctype">
             <h2>&lt;!DOCTYPE&gt;</h2>
             <p>Defines the document type and version of HTML. It is an essential declaration at the beginning of an HTML document. The declaration tells the web browser which version of HTML the document is using, allowing it to render the page correctly.</p>
         </section>
-        <section id="html">
+        <section id="HTML">
             <h2>&lt;html&gt;</h2>
             <p>The &lt;html&gt; element is the root element that wraps the entire HTML document. It is the container for all other HTML elements on the page.</p>
         </section>
@@ -377,28 +450,33 @@ color:white;
         </section>
         <section id="option">
             <h2>&lt;option&gt;</h2>
-            <p>The &lt;option&gt; element defines an individual option within a &lt;select&gt; dropdown list. It represents an item that can be selected by the user.</p>
-     
+            <p>The &lt;option&gt; element defines an individual option within a &lt;select&gt; dropdown list. It represents an item that can be selected by the user.</p></section>
+    <script>
+        const sections = document.querySelectorAll('.c16 section');
+
+        sections.forEach((section) => {
+            section.addEventListener('click', () => {
+                section.classList.toggle('expanded');
+            });
+        });
+    </script>    
+	</main>
+	 </div>
  <script>
 
-        function searchSections() {
-            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-            const sections = document.querySelectorAll("section");
+    function searchSections() {
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+    const sectionHeadings = document.querySelectorAll(".c16 section h2");
 
-            for (const section of sections) {
-                const sectionText = section.textContent.toLowerCase();
-                if (sectionText.includes(searchTerm)) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                    break;
-                }
-            }
+    for (const heading of sectionHeadings) {
+        const headingText = heading.textContent.toLowerCase();
+        if (headingText.includes(searchTerm)) {
+            heading.parentElement.classList.add("expanded"); // Expand the section if found
+            heading.parentElement.scrollIntoView({ behavior: "smooth" });
+            break;
         }
-
-
-        function toggleDropdown() {
-            const dropdownContent = document.getElementById("sectionDropdown");
-            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-        }
+    }
+}
     </script>
 	    <script>
         function toggleDropdown() {
@@ -406,6 +484,12 @@ color:white;
             dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
         }
     </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 MindChamp's CodeRealm. All rights reserved.</p>
+            <p>Contact Us: <a href="mailto:contact@mindchamp.in">contact@mindchamp.in</a></p>
+        </div>
+    </footer>
+    </footer>
 	 </body>
 		</html>
-		
