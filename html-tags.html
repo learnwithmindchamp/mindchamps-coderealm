@@ -181,27 +181,32 @@
         <section id="option">
             <h2>&lt;option&gt;</h2>
             <p>The &lt;option&gt; element defines an individual option within a &lt;select&gt; dropdown list. It represents an item that can be selected by the user.</p>
-     
+         <script>
+        const sections = document.querySelectorAll('.c16 section');
+
+        sections.forEach((section) => {
+            section.addEventListener('click', () => {
+                section.classList.toggle('expanded');
+            });
+        });
+    </script>    
+	</main>
+	 </div>
  <script>
 
-        function searchSections() {
-            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-            const sections = document.querySelectorAll("section");
+    function searchSections() {
+    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+    const sectionHeadings = document.querySelectorAll(".c16 section h2");
 
-            for (const section of sections) {
-                const sectionText = section.textContent.toLowerCase();
-                if (sectionText.includes(searchTerm)) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                    break;
-                }
-            }
+    for (const heading of sectionHeadings) {
+        const headingText = heading.textContent.toLowerCase();
+        if (headingText.includes(searchTerm)) {
+            heading.parentElement.classList.add("expanded"); // Expand the section if found
+            heading.parentElement.scrollIntoView({ behavior: "smooth" });
+            break;
         }
-
-
-        function toggleDropdown() {
-            const dropdownContent = document.getElementById("sectionDropdown");
-            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
-        }
+    }
+}
     </script>
 	    <script>
         function toggleDropdown() {
@@ -209,6 +214,12 @@
             dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
         }
     </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 MindChamp's CodeRealm. All rights reserved.</p>
+            <p>Contact Us: <a href="mailto:contact@mindchamp.in">contact@mindchamp.in</a></p>
+        </div>
+    </footer>
 	 </body>
 		</html>
 		
