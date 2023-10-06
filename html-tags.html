@@ -1,21 +1,40 @@
 <html>
 <head>
 <title>Mindchamp's CodeRealm</title>
-<link rel="stylesheet" href="main.css">
+    <style>
+
+    </style>
 
 </head>
 <body>
 
-    <header style="display: flex;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}">
-	<img src="https://raw.githubusercontent.com/AnAlgorithm/mindchamp-coding-resources/main/resources/MindChamp%20logo.png" style="margin-top:10px;margin-left:40px;width:80px;height:80px;">
-	<h1 style="margin-top:35px;margin-left:40px;">MindChamp's CodeRealm</h1>
+    <header>
+	<h1>MindChamp's CodeRealm</h1>
 	</header>
 
+   
+<nav>
+ 
+<table>
+<tr>
+<td rowspan=2 class="c4"><img src="Mindchamp.png" height='125' width='125' style="float:left;">	</td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/" class="c1">Home</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/courses"class="c1">Courses</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/projects"class="c1">Projects</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/educators"class="c1">Educators</a></td>
+<td rowspan=2 class="c3"><a href="https://www.mindchamp.in/code-a-bit-challenge"class="c1">Code-A-Bit-Challenge</a></td>
+<td rowspan=2 class="c3"><a href="tie.html"  id="rcorners1" style="color:white" class="c1">More</a></td>
+<td class="c6" ><a href="https://www.mindchamp.in/educators" class="c8">Teach With Us</a></td>
+</tr>
+<tr>
+<td class="c7"><a href="https://www.mindchamp.in/contact-us" class="c8">Book a Free Demo Session</a></td>
+</tr>
+</table>
+</nav>
+<br>
+<img src="png.png" height=450 width=100%>
+  <table align=center>
+<tr>
 <td colspan=2>
  <div class="search-container">
         <input type="text" id="searchInput" class="search-input" placeholder="Search...">
@@ -24,8 +43,8 @@
 	   <td class="c5"><div class="dropdown">
             <button onclick="toggleDropdown()" class="search-button">Go to Section</button>
             <div id="sectionDropdown" class="dropdown-content">
-                <a href="#doctype">&lt;!doctype&gt;</a>
-			<a href="#html">&lt;html&gt;</a>
+            <a href="#doctype">&lt;!doctype&gt;</a>
+			<a href="#HTML">&lt;html&gt;</a>
             <a href="#head">&lt;head&gt;</a>
 			<a href="#h1">&lt;h1&gt;</a>
             <a href="#p">&lt;p&gt;</a>
@@ -58,15 +77,17 @@
 				            </div>
         </div>
     </div>
+	
     </td>
-</tr>
-
-    <main style="margin-left:20px;">
+	</tr>
+	</table>
+<div align=center>
+    <main class="c16">
 			<section id="doctype">
             <h2>&lt;!DOCTYPE&gt;</h2>
             <p>Defines the document type and version of HTML. It is an essential declaration at the beginning of an HTML document. The declaration tells the web browser which version of HTML the document is using, allowing it to render the page correctly.</p>
         </section>
-        <section id="html">
+        <section id="HTML">
             <h2>&lt;html&gt;</h2>
             <p>The &lt;html&gt; element is the root element that wraps the entire HTML document. It is the container for all other HTML elements on the page.</p>
         </section>
@@ -180,8 +201,8 @@
         </section>
         <section id="option">
             <h2>&lt;option&gt;</h2>
-            <p>The &lt;option&gt; element defines an individual option within a &lt;select&gt; dropdown list. It represents an item that can be selected by the user.</p>
-         <script>
+            <p>The &lt;option&gt; element defines an individual option within a &lt;select&gt; dropdown list. It represents an item that can be selected by the user.</p></section>
+    <script>
         const sections = document.querySelectorAll('.c16 section');
 
         sections.forEach((section) => {
@@ -222,4 +243,3 @@
     </footer>
 	 </body>
 		</html>
-		
