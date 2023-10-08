@@ -15,43 +15,10 @@ header {
      text-shadow: 0px 0px 5px black;
     }
 
-.c2{
-background-color:yellow;
-}
-.c1{
-text-decoration:none;
-color:black;
-}
-.c3{
-color:black;
-padding-left:25;
-padding-right:25; 	
-}
-.c4{
-padding-right:200; 	
-padding-left:25;
-}
-
-.c5{
-text:decoration:none;
-}
-#rcorners1 {
-  border-radius: 25px;
-  padding: 20px; 
-  width: 45;
-  height: 20;
-  display: block;
-margin-top:auto;
-  background-color:#FF8C00;
-}
-#rcorners1:hover{
-background-color:#00c8dc;
-color:white;
-}
-
         .search-container {
             text-align: center;
             margin-top: 20px;
+	    margin-left: 30%;
         }
 
         .search-input {
