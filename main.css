@@ -34,8 +34,8 @@ a.linkh:hover {
 
         .search-container {
             text-align: center;
+            margin-left: 250px;
             margin-top: 20px;
-	    margin-left: 30%;
         }
 
         .search-input {
