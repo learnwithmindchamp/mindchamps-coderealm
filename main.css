@@ -15,6 +15,21 @@ header {
      text-shadow: 0px 0px 5px black;
     }
 
+.links {
+	margin-top: 40px;
+        font-size: 15px;
+        margin-left: auto;
+}
+
+.linkh {
+	color: white;
+	text-decoration: none;
+}
+
+.linkh"hover {
+	color: #aaaaaa;
+}
+
         .search-container {
             text-align: center;
             margin-top: 20px;
