@@ -168,6 +168,7 @@ color:white;
         }
         footer {
             background-color:#00c8dc ;
+	    text-shadow: 0.5px 0.5px #aaaaaa;
             color: white;
             padding: 10px 0;
             text-align: center;
