@@ -2,6 +2,242 @@
 <head>
 <title>Mindchamp's CodeRealm</title>
 <link rel="stylesheet" href="main.css">
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+      background-color: #00c8dc;
+      font-size: 10px;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-weight: bold
+     text-shadow: 0px 0px 5px black;
+    }
+
+.links {
+	margin-top: 40px;
+        font-size: 15px;
+        margin-left: auto;
+	margin-right: 15px;
+}
+
+.linkh {
+	color: white;
+	text-decoration: none;
+	margin-right: 9px;
+}
+
+a.linkh:hover {
+    color: #555555;
+}
+
+        .search-container {
+            text-align: center;
+            margin-left: 250px;
+            margin-top: 20px;
+        }
+
+        .search-input {
+            width: 300;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+			padding-right:30;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #00c8dc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orange;
+            color: white;
+        }
+		        .search-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        .search-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            max-height: 200px; 
+            overflow-y: auto; 
+        }
+
+        .search-option {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .search-option:hover {
+            background-color: #f2f2f2;
+        }
+		.c5{
+		padding-top:20;
+		padding-left:30;
+		}
+		.c6{
+		background-color:#00c8dc;
+		color:white;
+  border-radius: 25px;
+
+  padding: 20px; 
+  width: 125;
+  height: 20;
+  display: block;
+ 
+text-align:center;
+  padding-left:20;
+}
+		
+		.c7{
+		background-color:orange;
+		color:white;
+  border-radius: 25px;
+  padding: 20px; 
+  width: 125;
+  height: 30;
+  display: block;
+
+text-align:center;
+		}
+		.c8{
+		text-decoration:none;
+color:white;
+}
+
+
+        .c16 {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: calc(33.33% - 40px);
+            width: 1000;
+            text-align: center;
+        }
+
+        .c16 h2 {
+            color: #007acc;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .c16 p {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        footer {
+            background-color:#00c8dc ;
+	    text-shadow: 0.5px 0.5px #aaaaaa;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+		   .c16 section {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .c16 section:hover {
+        background-color: #e0e0e0;
+    }
+
+		.c16 section.expanded {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+    }
+
+    .c16 section.expanded h2 {
+        color: #007acc;
+    }
+
+
+    .c16 section h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .c16 section p {
+        display: none;
+    }
+
+    .c16 section.expanded p {
+        display: block;
+    }
+	</style>
 </head>
 <body>
 
@@ -61,8 +297,8 @@
     </div>
     </td>
 	</tr>
-    <main style="margin-left:20px;">
-		
+	<div align=center>
+
     <main class="c16">
 			<section id="doctype">
             <h2>&lt;!DOCTYPE&gt;</h2>
@@ -191,7 +427,7 @@
                 section.classList.toggle('expanded');
             });
         });
-    </script>    
+    </script>     
 	</main>
 	 </div>
  <script>
@@ -216,14 +452,6 @@
             dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
         }
     </script>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 MindChamp's CodeRealm. All rights reserved.</p>
-            <p>Contact Us: <a href="mailto:contact@mindchamp.in">contact@mindchamp.in</a></p>
-        </div>
-    </footer>
-	 </body>
-		</html>
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 MindChamp's CodeRealm. All rights reserved.</p>
