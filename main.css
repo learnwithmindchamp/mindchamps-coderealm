@@ -25,11 +25,11 @@ header {
 .linkh {
 	color: white;
 	text-decoration: none;
-	margin-right: 5px;
+	margin-right: 9px;
 }
 
-.linkh"hover {
-	color: #aaaaaa;
+a.linkh:hover {
+    color: #555555;
 }
 
         .search-container {
