@@ -3,6 +3,7 @@
 <title>Mindchamp's CodeRealm</title>
 <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
 <header style="display: flex;
@@ -192,23 +193,25 @@
     </script>    
 	</main>
 	 </div>
- <script>
-
-    function searchSections() {
-    const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-    const sectionHeadings = document.querySelectorAll(".c16 section h2");
-
-    for (const heading of sectionHeadings) {
-        const headingText = heading.textContent.toLowerCase();
-        if (headingText.includes(searchTerm)) {
-            heading.parentElement.classList.add("expanded"); // Expand the section if found
-            heading.parentElement.scrollIntoView({ behavior: "smooth" });
-            break;
+     <script>
+        function searchSections() {
+            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            const sectionHeadings = document.querySelectorAll("main section h2");
+    
+            for (const heading of sectionHeadings) {
+                const headingText = heading.textContent.toLowerCase();
+                const section = heading.parentElement;
+    
+                if (headingText.includes(searchTerm)) {
+                    section.classList.add("expanded"); // Expand the section if found
+                    section.scrollIntoView({ behavior: "smooth" });
+                    break;
+                }
+            }
         }
-    }
-}
     </script>
-	    <script>
+    
+    <script>
         function toggleDropdown() {
             const dropdownContent = document.getElementById("sectionDropdown");
             dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
