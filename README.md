@@ -1,2 +1,2 @@
-# mindchamp-coding-resources
-MindChamp Coding Resources
+# mindchamps-coderealm
+MindChamp's CodeRealm - Internship Project
