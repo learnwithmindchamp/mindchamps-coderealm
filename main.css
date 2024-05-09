@@ -232,3 +232,15 @@ color:white;
     .c16 section.expanded p {
         display: block;
     }
+.try-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.try-button:hover {
+    background-color: darkgreen;
