@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title> Young Hub</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="icon" href="image.png">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+    body{
+            padding: 0%;
+            width: auto;
+            margin: 0%;
+            background: url("mindchamp.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;  
+            background-blend-mode: multiply;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar{
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+
+
+}
+.banner{
+    background-color: #333;
+    color: #fff;
+    padding: 5x 0;
+    opacity: 1;
+}
+    
+.logo{
+    width: 75px;
+    cursor: pointer;
+ }
+    
+ .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    
+    
+}
+    
+.navbar ul li::after{
+    height: 3px; 
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    content: '';
+    bottom: -10px;
+    transition: absolute;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{ 
+    width: 100%;
+
+}
+
+        #main{
+            font-family: Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            padding-top: 10%;
+            font-size: x-large;
+            color: rgb(0, 63, 99);
+        }
+
+        #texton{
+            color: #fff;
+        }
+
+        button{
+        width: 400px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 60px -200px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 5px solid #002f6d;
+        background:#002f6d96;
+        color: #fff;
+        cursor: pointer;
+        overflow: hidden;
+        font-size: large;
+        position: absolute;
+        bottom: 130px;
+        }
+        
+
+        button:hover span{ 
+        width: 100%;
+        }
+
+        button:hover {
+         background-color:rgb(0, 54, 75);
+         border-color: black;
+         color: rgb(255, 255, 255);
+        transition: 0.5s;
+        font-size: larger;
+        }
+
+        #info{
+            font-size:large;
+            color: #fff;
+        }
+        
+        .menu-toggle {
+            display: none;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: transform 0.3s ease;
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #333;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+
+.slider ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slider ul li {
+  padding: 15px 20px;
+}
+
+.slider ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-icons ion-icon {
+  font-size: 24px;
+}
+
+             /* Media query for smaller screens */
+             @media only screen and (max-width: 768px) {
+            .navbar ul {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+
+            .navbar ul.show {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: #333;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+       
+ 
+    </style>
+</head>
+<body background="mindchamp.jpg">
+    <div class="banner">
+    <div class="navbar">
+         <img src="image.png" class="logo">
+         <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html-tags.html">Html</a></li>
+        <li><a href="timetable.htm">Css</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="feedback.html">feetback</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+      <nav class="slider">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html-tags.html">Html</a></li>
+          <li><a href="timetable.htm">Css</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </nav>
+      
+    
+    <div class="content">
+    <div id="main">
+    <center>
+        <button type="slection">Explore Now!!</button>
+        </div>
+    </center>
+    </div>
+    </div>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.slider').classList.toggle('show');
+        document.querySelector('.hamburger').classList.toggle('active');
+    });
+
+    </script>
+</body>
+</html>
